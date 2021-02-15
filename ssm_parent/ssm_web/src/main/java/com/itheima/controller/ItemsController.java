@@ -27,6 +27,7 @@ public class ItemsController {
 
     @RequestMapping("/save")
     public String save(Items items){
+		//调用业务保存
         int save = itemsService.save(items);
         return "redirect:/items/list";
     }
