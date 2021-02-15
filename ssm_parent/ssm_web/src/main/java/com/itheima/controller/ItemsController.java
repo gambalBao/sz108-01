@@ -17,6 +17,8 @@ public class ItemsController {
 
     @RequestMapping("/list")
     public String list(Model model){
+		//调用业务查询所有
+		//调用业务查询所有
         List<Items> list = itemsService.findAll();
         //塞回给页面
         model.addAttribute("items",list);
