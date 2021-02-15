@@ -19,6 +19,7 @@ public class ItemsController {
     public String list(Model model){
 		//调用业务查询所有
 		//调用业务查询所有
+		//我是老大111
         List<Items> list = itemsService.findAll();
         //塞回给页面
         model.addAttribute("items",list);
